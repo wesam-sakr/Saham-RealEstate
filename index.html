@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Saham RealEstate</title>
+   <link rel="icon" href="images/min-logo.png">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Bootstrap link  -->
+   <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+   <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+   <!-- owl-carousel link -->
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+   <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- custom css ltr file link  -->
+  <link rel="stylesheet" href="css/style-ltr.css">
+
+</head>
+
+<body id="home">  
+<!------------- header section ------------->
+<nav class="navbar top-nav">
+  <div class="container">
+    <div class="helper-pages">
+      <a href="policy.html">
+        <i class="bi bi-info-lg"></i>
+        <span>سياسة الخصوصية</span>
+      </a>
+      <a href="help.html">
+        <i class="bi bi-question-lg"></i>
+        <span>المساعدة</span>
+      </a>
+    </div>
+    <ul class="icons m-0 d-flex">
+      <li>
+        <a href="chat.html">
+          <i class="bi bi-chat-dots"></i>
+          <span class="quantity-num">0</span>
+        </a>
+      </li>
+      <li>
+        <a href="notification.html">
+          <i class="bi bi-bell"></i>
+          <span class="quantity-num">0</span>
+        </a>
+      </li>
+      <li class="top-nav-user">
+        <a href="profile.html" class="has-menu">
+          <i class="bi bi-person"></i>
+        </a>
+        <div class="sub-menu">
+          <a href="login.html">تسجيل الدخول</a>
+          <a href="register.html">انشاء حساب</a>
+          <button type="button" style="width: 100%;">تسجيل خروج</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<nav class="navbar main-nav navbar-expand-lg navbar-light top-0">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand m-0" href="index.html"><img class="ms-2" src="images/Logo.png" width="" alt="">
+    </a>
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html"> الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">خدماتنا</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="estates.html">العقارات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">تواصل معنا</a>
+        </li>
+      </ul> 
+      <ul class="m-0 d-flex align-items-center" style="gap:10px">
+        <li class="nav-item">
+          <a href="" id="lang">
+            EN
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link aqar-button" href="addEstate.html">
+            <span class="text">
+              إضافة عقار
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header style="background: url(images/background.png) center center;">
+  <main class="h-100 d-flex align-items-center justify-content-center text-white">
+    <div class="container d-flex align-items-center justify-content-center text-white">
+      <div class="w-100">
+        <div class="w-75 text-center m-auto" >
+          <h3 class="mb-4 fw-bold">
+            لا تفوت فرصة الحصول على عقار رائع في الموقع الأمثل لدينا
+          </h3>
+          <small>عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</small>
+        </div>
+        <div class="build-options">
+          <div class="form-group">
+            <input type="radio" class="d-none" name="purpose" id="buy">
+            <label for="buy" class="place">
+              <div class="icon">
+                <i class="fa-solid fa-landmark-flag"></i>
+              </div>
+              <span>شراء</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="d-none" name="purpose" id="rent">
+            <label class="place" for="rent">
+              <div class="icon">
+                <i class="fa-solid fa-house"></i>
+              </div>
+              <span>ايجار</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <input type="radio" class="d-none" name="purpose" id="land">
+            <label class="place" for="land">
+              <div class="icon">
+                <i class="fa-solid fa-campground"></i>
+              </div>
+              <span>قطعة أرض</span>
+            </la>
+          </div>
+        </div>
+        <div class="classification">
+          <form class="classification-content" action="" method="#" enctype="multipart">
+            <div class="col px-1">
+              <input class="form-control w-100" type="search" placeholder="... ادخل الكلمات">
+    
+            </div>
+            <div class="col px-1">
+              <select>
+                <option selected disabled>اختر النوع</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            
+            <div class="col px-1">
+              <input class="form-control w-100" type="search" placeholder="الموقع">
+            </div>
+  
+            <div class="col px-1 room">
+              <select>
+                <option selected disabled>الغرف</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+    
+            <div class="col px-1">
+              <button type="button" class="btn bg-main-color w-100">ابحث</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</header>
+
+<div class="side-menu-classification">
+  <a href="javascript:void(0)" class="toggle-side-menu-classification"><i class="bi bi-search"></i></a>
+  <a href="javascript:void(0)" class="close-side-menu-classification"><i class="bi bi-x-lg"></i></a>
+  <form class="side-menu-classification-content" action="" method="#" enctype="multipart">
+    <div class="build-options">
+      <div class="form-group">
+        <input type="radio" class="d-none" name="purpose" id="buy">
+        <label for="buy" class="place">
+          <div class="icon">
+            <i class="fa-solid fa-landmark-flag"></i>
+          </div>
+          <span>شراء</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="radio" class="d-none" name="purpose" id="rent">
+        <label class="place" for="rent">
+          <div class="icon">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <span>ايجار</span>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="radio" class="d-none" name="purpose" id="land">
+        <label class="place" for="land">
+          <div class="icon">
+            <i class="fa-solid fa-campground"></i>
+          </div>
+          <span>قطعة أرض</span>
+        </la>
+      </div>
+    </div>
+    <input class="form-control" type="search" placeholder="... ادخل الكلمات" aria-label="default input example">
+    <select class="form-control" aria-label="اختر النوع">
+      <option selected="" disabled="">اختر النوع</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <input class="form-control" type="search" placeholder="الموقع" aria-label="default input example">
+    <select class="form-control" aria-label="الغرف">
+      <option selected="" disabled="">الغرف</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+    <button type="button" class="btn btn-orange">ابحث</button>
+  </form>
+</div>
+
+<!-------------- services section -------------->
+<section class="services">
+  <div class="container my-5">
+    <div class="mb-5 text-center">
+      <h4 class="fw-bold">خدماتنا</h4>
+      <p>
+        وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="service">
+          <a class="link" href="buy-real.html"></a>
+          <div class="serv-data">
+            <div class="serv-icon">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <h5>شراء عقار</h5>
+          </div>
+          <div class="serv-hover"></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="service">
+          <a class="link" href=""></a>
+          <div class="serv-data">
+            <div class="serv-icon">
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </div>
+            <h5>إيجار عقار</h5>
+          </div>
+          <div class="serv-hover"></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="service">
+          <a class="link" href="rental.html"></a>
+          <div class="serv-data">
+            <div class="serv-icon">
+              <i class="fa-solid fa-house-circle-check"></i>
+            </div>
+            <h5>قطعة أرض</h5>
+          </div>
+          <div class="serv-hover"></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="service">
+          <a class="link" href="rental.html"></a>
+          <div class="serv-data">
+            <div class="serv-icon">
+              <i class="fa-solid fa-house-circle-check"></i>
+            </div>
+            <h5>مقاولات</h5>
+          </div>
+          <div class="serv-hover"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------- our-estates section -------------->
+<section class="container our-estates">
+  <div class="our-estates-headline py-5">
+    <h5>عقاراتنا</h5>
+    <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
+  </div>
+  <div class="our-estates-slider">
+    <div class="row gy-4">
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-12">
+        <div class="card">
+          <div class="card-img ">
+            <img src="images/Group 2385.png" class="card-img-top" alt="...">
+            <div class="card-hover">
+              <div class="icons">
+                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+              </div>
+              <div class="icons">
+                <a class="link" href="showSingle.html"></a>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+              </div>
+              <button class="fav icons">
+                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="secondry-color">$505,00</p>
+            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+            <p class="card-text">
+              <i class="bi bi-geo-alt"></i>
+              <span>موقع المنزل يكتب هنا</span>
+            </p>
+          </div>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bed"></i>
+                  <span>2 غرفة نوم</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-bath"></i>
+                  <span>2 حمام</span>
+                </small>
+              </div>
+              <div class="col-4">
+                <small class="text-muted">
+                  <i class="fa-solid fa-warehouse"></i>
+                  <span>3000</span>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------- steps section -------------->
+<section class="steps my-5">
+  <div class="container">
+    <div class="row gx-0 gy-5 ">
+      <div class="col-10 m-auto col-md-10 col-lg-5">
+        <div class="img-rotate px-3">
+          <img class="w-100 px-3" src="images/box-studio-img.png" height="470px" alt="">
+        </div>
+      </div>
+      <div class="col m-0">
+        <div class="ms-4 mb-5">
+          <h4 class="fw-bold mb-4">
+            لا تفوت فرصة الحصول على عقار رائع في الموقع الأمثل لدينا
+          </h4>
+          <p>يعمل لدينا أكثر من 39,000 شخص في أكثر من 70 دولة في جميع أنحاء هذه التغطية العالمية، إلى جانب الخدمات المتخصصة</p>
+        </div>
+        <ol>
+          <li>
+            <div>
+              <h5>الخطوه الاولي</h5>
+              <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h5>الخطوه الثانيه</h5>
+              <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h5>الخطوه الثالثه</h5>
+              <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم </p>
+            </div>
+          </li>
+        </ol>        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------- aqar-rental section -------------->
+<section class="aqar-rental my-5 pt-5">
+  <div class="container">
+    <div class="row gx-0 gy-5 align-items-center">
+      <div class="col pe-lg-4">
+        <div class="mb-5">
+          <h4 class="fw-bold secondry-color mb-4">
+            سوق تاجير العقارات الرائده
+          </h4>
+          <p>يعمل لدينا أكثر من 39,000 شخص في أكثر من 70 دولة في جميع أنحاء هذه التغطية العالمية، إلى جانب الخدمات المتخصصة</p>
+        </div>  
+        <div class="mb-5">
+          <h5>تصميم المنزل الذكي</h5>
+          <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</p>
+        </div>
+        <div class="mb-5">
+          <h5>تصميم المنزل الذكي</h5>
+          <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</p>
+        </div>  
+        <a href="" role="button" class="aqar-button">
+          <div class="text">معرفة المزيد
+            <i class="bi bi-arrow-left ms-2"></i>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 m-auto col-md-10 col-lg-5 p-5 img-rotate">
+        <div class="container">
+            <div class="position-relative">  
+              <img class="w-100" src="images/box-studio-img (1).png" height="470px" alt="">
+              <div class="tags position-absolute top-50 start-0 translate-middle" style="background-color: rgba(33, 96, 178, .8);">
+                <h6 class="m-0">+400</h6>
+                <span>بيع شقه</span>
+              </div>
+              <div class="tags position-absolute top-100 start-50 translate-middle" style="background-color: rgba(255, 255, 255, .8);color:var(--secondry-color)">
+                <h6 class="m-0">+1000</h6>
+                <span>عميل</span>
+              </div>
+              <div class="tags position-absolute start-100 translate-middle" style="background-color: rgba(70, 157, 143, 0.65); top:25%">
+                <h6 class="m-0">+700</h6>
+                <span> ايجار شقه</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------- counter section -------------->
+<section class="py-5">
+  <div class="container">
+    <div class="counters">
+      <div class="row justify-content-center align-items-end text-center gy-4 py-5">
+          <!-- مبيعات مكتمله -->
+          <div class="col-6 col-sm-6 col-lg-3">
+              <img src="images/svgexport-6 - 2022-03-28T115700.454.svg" alt="">
+              <div class="count-txt">
+                  <h4 class="counter" data-target="2500">0</h4>
+                  <p class="text-muted">مبيعات مكتمله</p>
+              </div>
+          </div>
+          <!-- ايجار شقه -->
+          <div class="col-6 col-sm-6 col-lg-3">
+            <img src="images/svgexport-6 - 2022-03-28T101156.931.svg" alt="">
+            <div class="count-txt">
+                <h4 class="counter" data-target="700">0</h4>
+                <p class="text-muted">ايجار شقه</p>
+            </div>
+        </div>
+          <!-- مبيعات عقارات -->
+          <div class="col-6 col-sm-6 col-lg-3">
+            <img src="images/svgexport-6 - 2022-03-28T115724.108.svg" alt="">
+            <div class="count-txt">
+                <h4 class="counter" data-target="550">0</h4>
+                <p class="text-muted">مبيعات عقارات</p>
+            </div>
+          </div>
+          <!-- عملاء سعداء -->
+          <div class="col-6 col-sm-6 col-lg-3">
+            <img src="images/svgexport-6 - 2022-03-28T115844.958.svg" alt="">
+            <div class="count-txt">
+                <h4 class="counter" data-target="650">0</h4>
+                <p class="text-muted">عملاء سعداء</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<!-------------- our-estates section -------------->
+<section class="container our-estates">
+  <div class="our-estates-headline py-5">
+    <h5>العقارات المثبتة</h5>
+    <p>
+      عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة
+    </p>
+  </div>
+  <div class="our-estates-slider">
+    <div class="owl-carousel">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div class="badge">
+            <span>مثبت</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div class="badge">
+            <span>مثبت</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div class="badge">
+            <span>مثبت</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <div class="badge">
+            <span>مثبت</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------  section -------------->
+<section class="my-5">
+  <div class="container">
+    <div class="sendMail">
+      <div class="row gy-5 align-items-center justify-content-between">
+        <div class="col-lg-5 col-md-12">
+          <h4 class="fw-bold">
+            لطلب المقاولات يمكن زيارة الصفحة أدناه
+          </h4>
+          <p class="text-muted my-4">
+            يمكنك طلب مقاولة عن طريق إضافة البيانات الخاصة بك وإرسالها وتنتظر الرد في أقرب وقت
+          </p>
+          <a href="" role="button" class="aqar-button">
+            <div class="text">
+              الذهاب للصفحه
+              <i class="bi bi-arrow-left ms-2"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <img src="images/MZrMARcx30A-removebg-preview.png" class="w-100" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- client comment section -------------->
+<section class="client-comment">
+  <div class="container py-5">
+    <div class="client-comment-headline text-center pb-5">
+      <h5>اراء العملاء</h5>
+      <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
+    </div>
+    <div class="client-comment-slider">
+      <div class="owl-carousel container">
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="images/skynews-paris-france_4945006.png" class="card-img-top" alt="...">
+              <div>
+                  <h5>اسم المستخدم</h5>
+                  <p>مالك عقار</p>
+              </div>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+            <div class="Stars" style="--rating:4"></div>
+          </div>
+        </div>
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="images/skynews-paris-france_4945006.png" class="card-img-top" alt="...">
+              <div>
+                  <h5>اسم المستخدم</h5>
+                  <p>مالك عقار</p>
+              </div>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+            <div class="Stars" style="--rating:4"></div>
+          </div>
+        </div>
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="images/skynews-paris-france_4945006.png" class="card-img-top" alt="...">
+              <div>
+                  <h5>اسم المستخدم</h5>
+                  <p>مالك عقار</p>
+              </div>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+            <div class="Stars" style="--rating:4"></div>
+          </div>
+        </div>
+        <div class="card user-comment">
+          <div class="card-body">
+            <div class="d-flex mb-3">
+              <img src="images/skynews-paris-france_4945006.png" class="card-img-top" alt="...">
+              <div>
+                  <h5>اسم المستخدم</h5>
+                  <p>مالك عقار</p>
+              </div>
+            </div>
+            <small>
+              وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم
+            </small>
+            <div class="Stars" style="--rating:4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------- footer section -------------->
+<footer>
+  <div class="container my-3">
+    <div class="row gx-4 justify-content-between">
+      <!-- الشركه  -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="d-flex align-items-center">
+          <img src="images/logo.png" width="70%" alt="">
+        </div>
+        
+        <p class="my-4">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</p>
+
+        <!-- social -->
+        <div class="social">
+          <div>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- خريطة الموقع -->
+      <div class="col-12 col-sm-4 col-md-4 col-lg-auto mt-3">
+        <h4>خريطة الموقع</h4>
+        <div class="ln"></div>
+        <ul>
+          <li><a href="index.html">الصفحة الرئيسية</a></li>
+          <li><a href="aboutUs.html">من نحن</a></li>
+          <li><a href="estates.html">العقارات</a></li>
+          <li><a href="blogs.html">المدونة</a></li>
+          <li><a href="contracting-request.html">طلب مقاولات</a></li>
+        </ul>
+      </div>
+
+      <!-- المساعدة -->
+      <div class="col-12 col-sm-4 col-sm-4 col-md-4 col-lg-auto mt-3">
+        <h4>المساعدة</h4>
+        <div class="ln"></div>
+        <ul>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a href="policy.html">سياسيات الخصوصية</a></li>
+          <li><a href="conditions.html">الشروط والأحكام</a></li>
+          <li><a href="blacklist.html">أسباب التعرض للقائمة السوداء</a></li>
+          <li><a href="common-que.html">الأسئلة الشائعة</a></li>
+        </ul>  
+      </div>
+
+        <!-- النشرة البريدية -->
+      <div class="col-12 col-sm-4 col-md-4 col-lg-3 mt-3">
+        <h4>النشرة البريدية</h4>
+        <div class="ln"></div>
+        <form action="">
+          <div class="row subscribe justify-content-end">
+            <div class="col-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-email">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input type="email" class="form-control border-0" placeholder="" aria-label="email" aria-describedby="basic-email">
+              </div>              
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="aqar-button">
+                <div class="text">
+                  اشتراك
+                </div>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- nested footer -->
+  <div class="sub-footer">
+    <p class="text-center mb-0">
+      <a href="https://smartvision4p.com" target="_blank">
+      <span>جميع الحقوق محفوظة لـشركة سهم للخدمات العقارية</span>
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- lottiefiles script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

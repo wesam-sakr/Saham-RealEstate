@@ -32,7 +32,7 @@
 
 </head>
 
-<body id="home">  
+<body>  
 <!------------- header section ------------->
 <nav class="navbar top-nav">
   <div class="container">
@@ -46,6 +46,7 @@
         <span>المساعدة</span>
       </a>
     </div>
+    <!-- if auth -->
     <ul class="icons m-0 d-flex">
       <li>
         <a href="chat.html">
@@ -63,11 +64,26 @@
         <a href="profile.html" class="has-menu">
           <i class="bi bi-person"></i>
         </a>
-        <div class="sub-menu">
+        <!-- <div class="sub-menu">
           <a href="login.html">تسجيل الدخول</a>
           <a href="register.html">انشاء حساب</a>
           <button type="button" style="width: 100%;">تسجيل خروج</button>
-        </div>
+        </div> -->
+      </li>
+    </ul>
+    <!-- else -->
+    <ul class="icons m-0 d-flex d-none">
+      <li>
+        <a href="login.html">
+          <i class="bi bi-person"></i>
+          <span class="">تسجيل دخول</span>
+        </a>
+      </li>
+      <li>
+        <a href="register.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span class="">إنشاء حساب</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -313,445 +329,443 @@
     <h5>عقاراتنا</h5>
     <p>وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية</p>
   </div>
-  <div class="our-estates-slider">
-    <div class="row gy-4">
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+  <div class="row gy-4">
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6 col-12">
-        <div class="card">
-          <div class="card-img ">
-            <img src="images/Group 2385.png" class="card-img-top" alt="...">
-            <div class="card-hover">
-              <div class="icons">
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
-              </div>
-              <div class="icons">
-                <a class="link" href="showSingle.html"></a>
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              </div>
-              <button class="fav icons">
-                <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
-              </button>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+      <div class="card">
+        <div class="card-img ">
+          <img src="images/Group 2385.png" class="card-img-top" alt="...">
+          <div class="card-hover">
+            <div class="icons">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
             </div>
+            <div class="icons">
+              <a class="link" href="showSingle.html"></a>
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <button class="fav icons">
+              <i onclick="favFunction(this)" class="fa-regular fa-heart"></i>
+            </button>
           </div>
-          <div class="card-body">
-            <p class="secondry-color">$505,00</p>
-            <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-            <p class="card-text">
-              <i class="bi bi-geo-alt"></i>
-              <span>موقع المنزل يكتب هنا</span>
-            </p>
-          </div>
-          <div class="card-footer">
-            <div class="row">
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bed"></i>
-                  <span>2 غرفة نوم</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-bath"></i>
-                  <span>2 حمام</span>
-                </small>
-              </div>
-              <div class="col-4">
-                <small class="text-muted">
-                  <i class="fa-solid fa-warehouse"></i>
-                  <span>3000</span>
-                </small>
-              </div>
+        </div>
+        <div class="card-body">
+          <p class="secondry-color">$505,00</p>
+          <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+          <p class="card-text">
+            <i class="bi bi-geo-alt"></i>
+            <span>موقع المنزل يكتب هنا</span>
+          </p>
+        </div>
+        <div class="card-footer">
+          <div class="row">
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bed"></i>
+                <span>2 غرفة نوم</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-bath"></i>
+                <span>2 حمام</span>
+              </small>
+            </div>
+            <div class="col-4">
+              <small class="text-muted">
+                <i class="fa-solid fa-warehouse"></i>
+                <span>3000</span>
+              </small>
             </div>
           </div>
         </div>
@@ -1272,7 +1286,7 @@
                 <span class="input-group-text" id="basic-email">
                   <i class="bi bi-envelope"></i>
                 </span>
-                <input type="email" class="form-control border-0" placeholder="" aria-label="email" aria-describedby="basic-email">
+                <input type="email" class="form-control p-2 border-0" placeholder="" aria-label="email" aria-describedby="basic-email">
               </div>              
             </div>
             <div class="col-auto">

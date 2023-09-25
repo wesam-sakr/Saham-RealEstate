@@ -26,6 +26,24 @@ $(document).ready(function () {
         $(".overlay-sidemenu").removeClass("show");
     })
 
+    // select edu-programs 
+    if ($('.estate-display').length > 0) {
+        const items = document.querySelectorAll('.estate-display button');
+        console.log(items);
+        document.querySelector('.estate-display').addEventListener(
+        'click',
+        ({ target }) => {
+            for (const item of items) item.classList.toggle('active', target === item);
+            console.log('vgdjhj')
+            if ($('.estate-display #single-tab').hasClass('active')) {
+                $('.our-estates').addClass('single')
+            }
+            else {
+                $('.our-estates').removeClass('single')
+            }
+        }
+        );
+    }
 
     /* -------------- upload profile pic ---------------- */
     if ($(".profile").length > 0) {

@@ -151,6 +151,7 @@
     <!------------- profile -------------->
     <section class="profile py-5">
       <div class="container">
+
         <!-- profile nav-sm -->
         <div class="profile-nav-sm rounded-3">
           <p class="m-0">الملف الشخصي</p>
@@ -158,13 +159,14 @@
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight" alt="">
           <!-- nav-items -->
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+          <div class="offcanvas offcanvas-start" tabindex="-1"
+            id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <!-- title -->
               <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
               <button type="button" class="btn-close text-reset"
-              data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <!-- profile title -->
@@ -174,7 +176,7 @@
               <!-- profile nav -->
               <div class="nav flex-column nav-pills">
                 <!-- المعلومات الشخصية -->
-                <a href="profile.html" class="nav-link active">
+                <a href="profile.html" class="nav-link">
                   <i class="bi bi-person"></i>
                   المعلومات الشخصيه
                 </a>
@@ -186,7 +188,7 @@
                 </a>
 
                 <!-- المقارنة -->
-                <a href="p_compare.html" class="nav-link">
+                <a href="p_compare.html" class="nav-link active">
                   <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   المقارنة
                 </a>
@@ -226,6 +228,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="row d-flex justify-content-between align-items-start">
           <!-- profile nav-lg col -->
           <div class="profile-nav col col-md-5 col-lg-3">
@@ -236,7 +240,7 @@
             <!-- profile nav -->
             <div class="nav flex-column nav-pills">
               <!-- المعلومات الشخصية -->
-              <a href="profile.html" class="nav-link active">
+              <a href="profile.html" class="nav-link">
                 <i class="bi bi-person"></i>
                 المعلومات الشخصيه
               </a>
@@ -248,7 +252,7 @@
               </a>
 
               <!-- المقارنة -->
-              <a href="p_compare.html" class="nav-link">
+              <a href="p_compare.html" class="nav-link active">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 المقارنة
               </a>
@@ -289,52 +293,111 @@
 
           <!-- profile data col -->
           <div class="profile-data col col-md-7 col-lg-9">
-            <form action="">
-              <!-- profile-picture -->
-              <div class="profile-pic position-relative bg-light">
-                <img class="w-100" src="images/avatar.png" alt="" id="photo">
-                <div class="profile-pic-icon">
-                  <i class="bi bi-camera-fill"></i>
-                </div>
-                <input type="file" id="file" name="" accept="image/*">
+            <!-------------- our-aqars section -------------->
+            <div class="compare-wrapper">
+              <div id="container" class="compare-scroller">
+                <table class="table compare-table table-striped align-middle">
+                  <thead>
+                    <tr>
+                      <th>صورة العقار</th>
+                      <th>سعر العقار</th>
+                      <th>عدد الغرف</th>
+                      <th>مساحة العقار</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="row gy-4 mb-3">
-                <!-- الاسم -->
-                <div class="col-12 col-lg-6">
-                  <p>الاسم</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- البريد الالكتروني -->
-                <div class="col-12 col-lg-6">
-                  <p>البريد الالكتروني</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- رقم الجوال -->
-                <div class="col-12 col-lg-6">
-                  <p>رقم الجوال</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- الرقم السري -->
-                <div class="col-12 col-lg-6">
-                  <p>الرقم السري</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text"
-                      data-bs-toggle="modal" data-bs-target="#login-modal">
-                  </div>
-                </div>
-              </div>
-              <a href="" role="button" class="button aqar-button mt-5">
-                <div class="text px-4">
-                  حفظ
-                </div>
-              </a>
-            </form>
+            </div>
           </div>
         </div>
       </div>

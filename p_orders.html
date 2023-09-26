@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Saham RealEstate</title>
+        <link rel="icon" href="images/min-logo.png">
+
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap link  -->
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+        <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+        <!-- owl-carousel link -->
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+        <!-- rateyo link -->
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+        <!-- nice select link -->
+        <link rel="stylesheet" href="css/nice-select.css">
+
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- custom css ltr file link  -->
+        <!-- <link rel="stylesheet" href="css/style-ltr.css"> -->
+
+    </head>
+
+    <body>
+
+        <!------------- nav section ------------->
+        <nav class="navbar top-nav">
+            <div class="container">
+                <div class="helper-pages">
+                    <a href="policy.html">
+                        <i class="bi bi-info-lg"></i>
+                        <span>سياسة الخصوصية</span>
+                    </a>
+                    <a href="help.html">
+                        <i class="bi bi-question-lg"></i>
+                        <span>المساعدة</span>
+                    </a>
+                </div>
+                <!-- if auth -->
+                <ul class="icons m-0 d-flex">
+                    <li>
+                        <a href="chat.html">
+                            <i class="bi bi-chat-dots"></i>
+                            <span class="quantity-num">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="notification.html">
+                            <i class="bi bi-bell"></i>
+                            <span class="quantity-num">0</span>
+                        </a>
+                    </li>
+                    <li class="top-nav-user">
+                        <a href="profile.html" class="has-menu">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- else -->
+                <ul class="icons m-0 d-flex d-none">
+                    <li>
+                        <a href="login.html">
+                            <i class="bi bi-person"></i>
+                            <span class="">تسجيل دخول</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="register.html">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                            <span class="">إنشاء حساب</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar main-nav navbar-expand-lg navbar-light top-0">
+            <div class="container">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand m-0" href="index.html"><img class="ms-2"
+                        src="images/Logo.png" width="" alt="">
+                </a>
+                <div class="collapse navbar-collapse justify-content-between
+                    align-items-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page"
+                                href="index.html">
+                                الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estates.html">العقارات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+                    <ul class="m-0 d-flex align-items-center" style="gap:10px">
+                        <li class="nav-item">
+                            <a href="" id="lang">
+                                EN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link aqar-button"
+                                href="addEstate.html">
+                                <span class="text">
+                                    إضافة عقار
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!------------- breadcrumb -------------->
+        <section class="border-bottom">
+            <div class="container">
+                <div class="d-flex pt-4 justify-content-center breadcrumb">
+                    <a href="index.html" class="text-muted"> الرئيسية</a>
+                    <span class="mx-2">/</span>
+                    <h6 class="secondry-color">الملف الشخصي</h6>
+                </div>
+            </div>
+        </section>
+
+        <!------------- profile -------------->
+        <section class="profile py-5">
+            <div class="container">
+
+                <!-- profile nav-sm -->
+                <div class="profile-nav-sm rounded-3">
+                    <p class="m-0">الملف الشخصي</p>
+                    <img src="images/Group 67653.png" class="btn" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight" alt="">
+                    <!-- nav-items -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1"
+                        id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <!-- title -->
+                            <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
+                            <button type="button" class="btn-close text-reset"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- profile title -->
+                            <div class="personal-title text-center">
+                                الملف الشخصي
+                            </div>
+                            <!-- profile nav -->
+                            <div class="nav flex-column nav-pills">
+                                <!-- المعلومات الشخصية -->
+                                <a href="profile.html" class="nav-link">
+                                    <i class="bi bi-person"></i>
+                                    المعلومات الشخصيه
+                                </a>
+
+                                <!-- المفضلة -->
+                                <a href="p_fav.html" class="nav-link">
+                                    <i class="bi bi-heart"></i>
+                                    المفضلة
+                                </a>
+
+                                <!-- المقارنة -->
+                                <a href="p_compare.html" class="nav-link">
+                                    <i class="fa-solid
+                                        fa-arrow-right-arrow-left"></i>
+                                    المقارنة
+                                </a>
+
+                                <!-- العقارات المعروضة -->
+                                <a href="p_estates.html" class="nav-link">
+                                    <i class="bi bi-house"></i>
+                                    العقارات المعروضة
+                                </a>
+
+                                <!-- المشتريات -->
+                                <a href="p_purchases.html" class="nav-link">
+                                    <i class="bi bi-house"></i>
+                                    المشتريات
+                                </a>
+
+                                <!-- الطلبات -->
+                                <a href="p_orders.html" class="nav-link active">
+                                    <i class="bi bi-house"></i>
+                                    الطلبات
+                                </a>
+
+                                <!-- فواتيري -->
+                                <a href="p_bills.html" class="nav-link">
+                                    <i class="bi bi-receipt"></i>
+                                    فواتيري
+                                </a>
+
+
+                            </div>
+                            <!--profile log out button -->
+                            <div class="d-grid gap-2">
+                                <button class="log-out btn d-block w-100 mt-1"
+                                    type="button">تسجيل
+                                    الخروج
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row d-flex justify-content-between
+                    align-items-start">
+                    <!-- profile nav-lg col -->
+                    <div class="profile-nav col col-md-5 col-lg-3">
+                        <!-- profile title -->
+                        <div class="personal-title text-center">
+                            الملف الشخصي
+                        </div>
+                        <!-- profile nav -->
+                        <div class="nav flex-column nav-pills">
+                            <!-- المعلومات الشخصية -->
+                            <a href="profile.html" class="nav-link">
+                                <i class="bi bi-person"></i>
+                                المعلومات الشخصيه
+                            </a>
+
+                            <!-- المفضلة -->
+                            <a href="p_fav.html" class="nav-link">
+                                <i class="bi bi-heart"></i>
+                                المفضلة
+                            </a>
+
+                            <!-- المقارنة -->
+                            <a href="p_compare.html" class="nav-link">
+                                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                المقارنة
+                            </a>
+
+                            <!-- العقارات المعروضة -->
+                            <a href="p_estates.html" class="nav-link">
+                                <i class="bi bi-house"></i>
+                                العقارات المعروضة
+                            </a>
+
+                            <!-- المشتريات -->
+                            <a href="p_purchases.html" class="nav-link">
+                                <i class="bi bi-house"></i>
+                                المشتريات
+                            </a>
+
+                            <!-- الطلبات -->
+                            <a href="p_orders.html" class="nav-link active">
+                                <i class="bi bi-house"></i>
+                                الطلبات
+                            </a>
+
+                            <!-- فواتيري -->
+                            <a href="p_bills.html" class="nav-link">
+                                <i class="bi bi-receipt"></i>
+                                فواتيري
+                            </a>
+
+
+                        </div>
+                        <!--profile log out button -->
+                        <div class="d-grid gap-2">
+                            <button class="log-out btn d-block w-100 mt-1"
+                                type="button">تسجيل
+                                الخروج
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- profile data col -->
+                    <div class="profile-data col-md-7 col-lg-9">
+                        <!-------------- our-aqars section -------------->
+                        <div class="e_orders">
+                            <div class="card">
+                                <img src="images/build.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        تفاصيل الطلب تكتب هنا
+                                    </h5>
+                                    <p class="card-text">
+                                        <a href="p_ord_offers.html"
+                                            class="offers-count">
+                                            <i class="bi bi-buildings"></i>
+                                            <span>
+                                                3
+                                                عروض شركات
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="contracting-req.html"
+                                        class="ord_edit">
+                                        <span>تعديل الطلب</span>
+                                    </a>
+                                    <button class="ord_del">
+                                        <span>حذف الطلب</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/build.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        تفاصيل الطلب تكتب هنا
+                                    </h5>
+                                    <p class="card-text">
+                                        <a href="p_ord_offers.html"
+                                            class="offers-count">
+                                            <i class="bi bi-buildings"></i>
+                                            <span>
+                                                3
+                                                عروض شركات
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="contracting-req.html"
+                                        class="ord_edit">
+                                        <span>تعديل الطلب</span>
+                                    </a>
+                                    <button class="ord_del">
+                                        <span>حذف الطلب</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!------------- footer section -------------->
+<footer>
+    <div class="container my-3">
+      <div class="row gx-4 justify-content-between">
+        <!-- الشركه  -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex align-items-center">
+            <img src="images/logo.png" width="70%" alt="">
+          </div>
+          
+          <p class="my-4">وعند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية المطلوبة للتصميم</p>
+  
+          <!-- social -->
+          <div class="social">
+            <div>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- خريطة الموقع -->
+        <div class="col-12 col-sm-4 col-md-4 col-lg-auto mt-3">
+          <h4>خريطة الموقع</h4>
+          <div class="ln"></div>
+          <ul>
+            <li><a href="index.html">الصفحة الرئيسية</a></li>
+            <li><a href="aboutUs.html">من نحن</a></li>
+            <li><a href="estates.html">العقارات</a></li>
+            <li><a href="blogs.html">المدونة</a></li>
+            <li><a href="contracting-request.html">طلب مقاولات</a></li>
+          </ul>
+        </div>
+  
+        <!-- المساعدة -->
+        <div class="col-12 col-sm-4 col-sm-4 col-md-4 col-lg-auto mt-3">
+          <h4>المساعدة</h4>
+          <div class="ln"></div>
+          <ul>
+            <li><a href="contact.html">تواصل معنا</a></li>
+            <li><a href="policy.html">سياسيات الخصوصية</a></li>
+            <li><a href="conditions.html">الشروط والأحكام</a></li>
+            <li><a href="blacklist.html">أسباب التعرض للقائمة السوداء</a></li>
+            <li><a href="common-que.html">الأسئلة الشائعة</a></li>
+          </ul>  
+        </div>
+  
+          <!-- النشرة البريدية -->
+        <div class="col-12 col-sm-4 col-md-4 col-lg-3 mt-3">
+          <h4>النشرة البريدية</h4>
+          <div class="ln"></div>
+          <form action="">
+            <div class="row subscribe justify-content-end">
+              <div class="col-12">
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="basic-email">
+                    <i class="bi bi-envelope"></i>
+                  </span>
+                  <input type="email" class="form-control p-2 border-0" placeholder="" aria-label="email" aria-describedby="basic-email">
+                </div>              
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="aqar-button">
+                  <div class="text">
+                    اشتراك
+                  </div>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- nested footer -->
+    <div class="sub-footer">
+      <p class="text-center mb-0">
+        <a href="https://smartvision4p.com" target="_blank">
+        <span>جميع الحقوق محفوظة لـشركة سهم للخدمات العقارية</span>
+        </a>
+      </p>
+    </div>
+  </footer>
+  
+  <!-- jQuery script -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  
+  <!-- lottiefiles script -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
+  <!-- owl-carousel script -->
+  <script src="js/owl.carousel.min.js"></script>
+  
+  <!-- bootstrap script -->
+  <script src="js/bootstrap.min.js"></script>
+  
+  <!-- rateyo script -->
+  <script src="js/jquery.rateyo.min.js"></script>
+  
+  <!-- nice select script -->
+  <script src="js/jquery.nice-select.min.js"></script>
+  
+  <!-- custom js file link  -->
+  <script src="js/script.js"></script>
+  
+  </body>
+  </html>

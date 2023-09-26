@@ -151,6 +151,7 @@
     <!------------- profile -------------->
     <section class="profile py-5">
       <div class="container">
+
         <!-- profile nav-sm -->
         <div class="profile-nav-sm rounded-3">
           <p class="m-0">الملف الشخصي</p>
@@ -158,13 +159,14 @@
             data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
             aria-controls="offcanvasRight" alt="">
           <!-- nav-items -->
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight"
+          <div class="offcanvas offcanvas-start" tabindex="-1"
+            id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
               <!-- title -->
               <h5 id="offcanvasRightLabel">الملف الشخصي</h5>
               <button type="button" class="btn-close text-reset"
-              data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <!-- profile title -->
@@ -174,13 +176,13 @@
               <!-- profile nav -->
               <div class="nav flex-column nav-pills">
                 <!-- المعلومات الشخصية -->
-                <a href="profile.html" class="nav-link active">
+                <a href="profile.html" class="nav-link">
                   <i class="bi bi-person"></i>
                   المعلومات الشخصيه
                 </a>
 
                 <!-- المفضلة -->
-                <a href="p_fav.html" class="nav-link">
+                <a href="p_fav.html" class="nav-link active">
                   <i class="bi bi-heart"></i>
                   المفضلة
                 </a>
@@ -226,6 +228,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="row d-flex justify-content-between align-items-start">
           <!-- profile nav-lg col -->
           <div class="profile-nav col col-md-5 col-lg-3">
@@ -236,13 +240,13 @@
             <!-- profile nav -->
             <div class="nav flex-column nav-pills">
               <!-- المعلومات الشخصية -->
-              <a href="profile.html" class="nav-link active">
+              <a href="profile.html" class="nav-link">
                 <i class="bi bi-person"></i>
                 المعلومات الشخصيه
               </a>
 
               <!-- المفضلة -->
-              <a href="p_fav.html" class="nav-link">
+              <a href="p_fav.html" class="nav-link active">
                 <i class="bi bi-heart"></i>
                 المفضلة
               </a>
@@ -288,53 +292,115 @@
           </div>
 
           <!-- profile data col -->
-          <div class="profile-data col col-md-7 col-lg-9">
-            <form action="">
-              <!-- profile-picture -->
-              <div class="profile-pic position-relative bg-light">
-                <img class="w-100" src="images/avatar.png" alt="" id="photo">
-                <div class="profile-pic-icon">
-                  <i class="bi bi-camera-fill"></i>
+          <div class="profile-data col-md-7 col-lg-9">
+            <!-------------- our-aqars section -------------->
+            <section class="our-estates">
+              <div class="row gy-3">
+                <div class="col-lg-6 col-12">
+                  <div class="card">
+                    <div class="card-img ">
+                      <img src="images/build.png" class="card-img-top"
+                        alt="...">
+                      <div class="card-hover">
+                        <div class="icons">
+                          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </div>
+                        <div class="icons">
+                          <a class="link" href="showSingle.html"></a>
+                          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <button class="fav icons">
+                          <i onclick="favFunction(this)" class="fa-solid
+                            fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="secondry-color">$505,00</p>
+                      <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+                      <p class="card-text">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>موقع المنزل يكتب هنا</span>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-bed"></i>
+                            <span>2 غرفة نوم</span>
+                          </small>
+                        </div>
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-bath"></i>
+                            <span>2 حمام</span>
+                          </small>
+                        </div>
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            <span>3000</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <input type="file" id="file" name="" accept="image/*">
+
+                <div class="col-lg-6 col-12">
+                  <div class="card">
+                    <div class="card-img ">
+                      <img src="images/build.png" class="card-img-top"
+                        alt="...">
+                      <div class="card-hover">
+                        <div class="icons">
+                          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        </div>
+                        <div class="icons">
+                          <a class="link" href="showSingle.html"></a>
+                          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </div>
+                        <button class="fav icons">
+                          <i onclick="favFunction(this)" class="fa-solid
+                            fa-heart"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="secondry-color">$505,00</p>
+                      <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
+                      <p class="card-text">
+                        <i class="bi bi-geo-alt"></i>
+                        <span>موقع المنزل يكتب هنا</span>
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <div class="row">
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-bed"></i>
+                            <span>2 غرفة نوم</span>
+                          </small>
+                        </div>
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-bath"></i>
+                            <span>2 حمام</span>
+                          </small>
+                        </div>
+                        <div class="col-4">
+                          <small class="text-muted">
+                            <i class="fa-solid fa-ruler-combined"></i>
+                            <span>3000</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="row gy-4 mb-3">
-                <!-- الاسم -->
-                <div class="col-12 col-lg-6">
-                  <p>الاسم</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- البريد الالكتروني -->
-                <div class="col-12 col-lg-6">
-                  <p>البريد الالكتروني</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- رقم الجوال -->
-                <div class="col-12 col-lg-6">
-                  <p>رقم الجوال</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
-                <!-- الرقم السري -->
-                <div class="col-12 col-lg-6">
-                  <p>الرقم السري</p>
-                  <div class="position-relative">
-                    <input class="form-control" type="text"
-                      data-bs-toggle="modal" data-bs-target="#login-modal">
-                  </div>
-                </div>
-              </div>
-              <a href="" role="button" class="button aqar-button mt-5">
-                <div class="text px-4">
-                  حفظ
-                </div>
-              </a>
-            </form>
+            </section>
           </div>
         </div>
       </div>

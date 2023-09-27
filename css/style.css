@@ -3046,6 +3046,9 @@ footer .sub-footer img {
 }
 
 @media (max-width:767.8px) {
+   .estate-display{
+      display: none;
+   }
    .profile .row .profile-nav {
       display: none;
    }

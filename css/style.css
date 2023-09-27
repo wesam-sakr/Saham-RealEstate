@@ -83,11 +83,11 @@ ul {
 }
 
 .secondry-color {
-   color: var(--secondry-color);
+   color: var(--secondry-color) !important;
 }
 
 .bg-main-color {
-   background-color: var(--main-color);
+   background-color: var(--main-color) !important;
    color: #fff !important;
 }
 
@@ -815,6 +815,7 @@ header main {
    align-items: center;
    justify-content: center;
    position: relative;
+   z-index: 9;
 }
 
 .our-estates .card-hover .icons:hover {
@@ -1754,6 +1755,7 @@ footer .sub-footer img {
 .notifi img {
    width: 45px;
    height: 45px;
+   padding: 5px;
    box-shadow: 0px 3px 12px 0px #01957238;
    border-radius: 50%;
    background-color: #fff;
@@ -2480,6 +2482,10 @@ footer .sub-footer img {
 .filter-data .our-estates.single .card {
    flex-direction: row;
    padding: 1rem;
+   align-items: center;
+}
+.filter-data .our-estates.single .card-title {
+   margin: 0.5rem 0 1rem 0;
 }
 
 .filter-data .our-estates.single .card-img {
@@ -2753,6 +2759,7 @@ footer .sub-footer img {
 
 .side-other-items .items-container .item img {
    width: 30%;
+   height: 80px;
    margin-left: 1rem;
    border-radius: 10px;
 }
@@ -3040,6 +3047,11 @@ footer .sub-footer img {
 @media (max-width:767.8px) {
    .profile .row .profile-nav {
       display: none;
+   }
+   .filter-data .our-estates {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
    }
 }
 

@@ -216,13 +216,9 @@ $('input[name="purpose"]').change(function(){
     else $('.room').show()
 })
 
-
-if ($(".fav").length > 0) {
-    function favFunction(x) {
-        x.classList.toggle("fa-solid");
-        x.classList.toggle("fa-regular")
-    }
-}
+$('.fav').click(function(){
+    $(this).find('i').toggleClass("fa-solid fa-regular")
+})
 
 // change password type
 var pass = document.getElementById('user-pass')

@@ -3027,6 +3027,14 @@ footer .sub-footer img {
    .filter-data .nav-tabs {
       display: none;
    }
+   .estate-display{
+      display: none;
+   }
+   .filter-data .our-estates {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+   }
 
    .chat-box {
       height: auto;
@@ -3066,16 +3074,8 @@ footer .sub-footer img {
 }
 
 @media (max-width:767.8px) {
-   .estate-display{
-      display: none;
-   }
    .profile .row .profile-nav {
       display: none;
-   }
-   .filter-data .our-estates {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
    }
 }
 

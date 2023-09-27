@@ -1657,7 +1657,9 @@ footer .sub-footer img {
    background-color: #15AC8B;
    border-radius: 50%;
 }
-
+.upload__btn img{
+   max-width: 80%;
+}
 .upload__img-wrap {
    display: flex;
    flex-wrap: wrap;
@@ -2955,6 +2957,8 @@ footer .sub-footer img {
 
    .navbar-collapse.show {
       background-color: var(--main-color);
+      border-radius: 10px;
+      padding: 2rem 1rem;
    }
 
    .navbar-collapse.show .navbar-nav {
@@ -2964,6 +2968,9 @@ footer .sub-footer img {
 
    .navbar-collapse.show .navbar-nav .nav-item {
       margin-bottom: 10px;
+   }
+   .navbar-collapse.show .navbar-nav .nav-link ,#lang{
+      color: #fff !important;
    }
 
    .navbar-collapse.show .navbar-nav .nav-link.active::after {
@@ -3029,6 +3036,19 @@ footer .sub-footer img {
       height: 100px;
       overflow-y: auto;
    }
+   .contant-input .text-input{
+      width: max-content;
+   }
+   .e_orders .card {
+      flex-direction: column;
+   }
+   .e_orders .card .card-img-top {
+      width: 100%;
+      height: 165px;
+   }
+   .e_orders .card .card-footer {
+      flex-direction: row;
+   }
 }
 
 @media (max-width:768px) {
@@ -3076,14 +3096,14 @@ footer .sub-footer img {
       display: none;
    }
 
-   .steps ol li::before {
+   /* .steps ol li::before {
       width: 3.2em;
    }
 
    .steps ol li::after {
       content: '';
       right: 23px;
-   }
+   } */
 
    .our-country .card .card-img-top {
       height: 35vh !important;
@@ -3118,6 +3138,32 @@ footer .sub-footer img {
 
    .chat-box .col .msgs {
       height: 400px;
+   }
+   .estate-title{
+      flex-direction: column !important;
+      gap: 10px;
+   }
+   .estate-title h4{
+      font-size: 19px;
+   }
+   .purpose {
+      padding: 8px 18px;
+      margin-right: 8px;
+      font-size: 16px;
+   }
+   .form-addbuilder .title-input {
+      width: 150px;
+   }
+   .form-addbuilder .data-input {
+      width: calc(100% - 180px);
+   }
+   .form-addbuilder .data-input .select-input, .form-addbuilder .data-input .nice-select {
+      width: 100%;
+   }
+   .data-input.d-flex
+   {
+      flex-wrap: wrap;
+      gap: 10px;
    }
 }
 
@@ -3162,6 +3208,20 @@ footer .sub-footer img {
    .navbar .quantity-num {
       top: 3px;
       left: 3px
+   }
+   .company-data .company-img {
+      border-radius: 50%;
+      width: 125px;
+      height: 125px;
+      transform: translate(0px, -55px);
+   }
+   .company-data {
+      gap: 15px;
+   }
+   .comp_info {
+      width: max-content;
+      flex-direction: column;
+      gap: 10px;
    }
 }
 

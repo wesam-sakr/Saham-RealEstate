@@ -2935,6 +2935,10 @@ footer .sub-footer img {
 
 
 @media (max-width:991.8px) {
+   header {
+      height: 60vh;
+   }
+   
    .main-nav>.container {
       justify-content: start;
    }
@@ -3080,10 +3084,6 @@ footer .sub-footer img {
 }
 
 @media (max-width:576px) {
-   header {
-      height: 80vh;
-   }
-
    .navbar a {
       font-size: inherit;
    }

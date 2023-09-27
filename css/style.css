@@ -2416,6 +2416,7 @@ footer .sub-footer img {
    padding: .5rem 1rem;
    border-radius: 5px 0px 0px 5px;
    display: none;
+   z-index: 99;
 }
 
 .form-check-input {

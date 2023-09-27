@@ -175,44 +175,51 @@
               </div>
               <!-- profile nav -->
               <div class="nav flex-column nav-pills">
+              
+                <!--  جميع الطلبات -->
+                <a href="cp_orders.html" class="nav-link">
+                  <i class="bi bi-house"></i>
+                  جميع الطلبات
+                </a>
+
+                <!-- طلباتي -->
+                <a href="cp_accOrders.html" class="nav-link">
+                  <i class="bi bi-house"></i>
+                  طلباتي
+                </a>
+
                 <!-- المعلومات الشخصية -->
-                <a href="profile.html" class="nav-link">
+                <a href="c_profile.html" class="nav-link">
                   <i class="bi bi-person"></i>
                   المعلومات الشخصيه
                 </a>
 
                 <!-- المفضلة -->
-                <a href="p_fav.html" class="nav-link active">
+                <a href="cp_fav.html" class="nav-link">
                   <i class="bi bi-heart"></i>
                   المفضلة
                 </a>
 
                 <!-- المقارنة -->
-                <a href="p_compare.html" class="nav-link">
+                <a href="cp_compare.html" class="nav-link active">
                   <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   المقارنة
                 </a>
 
                 <!-- العقارات المعروضة -->
-                <a href="p_estates.html" class="nav-link">
+                <a href="cp_estates.html" class="nav-link">
                   <i class="bi bi-house"></i>
                   العقارات المعروضة
                 </a>
 
                 <!-- المشتريات -->
-                <a href="p_purchases.html" class="nav-link">
+                <a href="cp_purchases.html" class="nav-link">
                   <i class="bi bi-house"></i>
                   المشتريات
                 </a>
 
-                <!-- الطلبات -->
-                <a href="p_orders.html" class="nav-link">
-                  <i class="bi bi-house"></i>
-                  الطلبات
-                </a>
-
                 <!-- فواتيري -->
-                <a href="p_bills.html" class="nav-link">
+                <a href="cp_bills.html" class="nav-link">
                   <i class="bi bi-receipt"></i>
                   فواتيري
                 </a>
@@ -239,44 +246,51 @@
             </div>
             <!-- profile nav -->
             <div class="nav flex-column nav-pills">
+              
+              <!--  جميع الطلبات -->
+              <a href="cp_orders.html" class="nav-link">
+                <i class="bi bi-house"></i>
+                جميع الطلبات
+              </a>
+
+              <!-- طلباتي -->
+              <a href="cp_accOrders.html" class="nav-link">
+                <i class="bi bi-house"></i>
+                طلباتي
+              </a>
+
               <!-- المعلومات الشخصية -->
-              <a href="profile.html" class="nav-link">
+              <a href="c_profile.html" class="nav-link">
                 <i class="bi bi-person"></i>
                 المعلومات الشخصيه
               </a>
 
               <!-- المفضلة -->
-              <a href="p_fav.html" class="nav-link active">
+              <a href="cp_fav.html" class="nav-link">
                 <i class="bi bi-heart"></i>
                 المفضلة
               </a>
 
               <!-- المقارنة -->
-              <a href="p_compare.html" class="nav-link">
+              <a href="cp_compare.html" class="nav-link active">
                 <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 المقارنة
               </a>
 
               <!-- العقارات المعروضة -->
-              <a href="p_estates.html" class="nav-link">
+              <a href="cp_estates.html" class="nav-link">
                 <i class="bi bi-house"></i>
                 العقارات المعروضة
               </a>
 
               <!-- المشتريات -->
-              <a href="p_purchases.html" class="nav-link">
+              <a href="cp_purchases.html" class="nav-link">
                 <i class="bi bi-house"></i>
                 المشتريات
               </a>
 
-              <!-- الطلبات -->
-              <a href="p_orders.html" class="nav-link">
-                <i class="bi bi-house"></i>
-                الطلبات
-              </a>
-
               <!-- فواتيري -->
-              <a href="p_bills.html" class="nav-link">
+              <a href="cp_bills.html" class="nav-link">
                 <i class="bi bi-receipt"></i>
                 فواتيري
               </a>
@@ -292,115 +306,112 @@
           </div>
 
           <!-- profile data col -->
-          <div class="profile-data col-md-7 col-lg-9">
+          <div class="profile-data col col-md-7 col-lg-9">
             <!-------------- our-aqars section -------------->
-            <section class="our-estates">
-              <div class="row gy-3">
-                <div class="col-lg-6 col-12">
-                  <div class="card">
-                    <div class="card-img ">
-                      <img src="images/build.png" class="card-img-top"
-                        alt="...">
-                      <div class="card-hover">
-                        <div class="icons">
-                          <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                        </div>
-                        <div class="icons">
-                          <a class="link" href="estate-details.html"></a>
-                          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                        <button class="fav icons">
-                          <i onclick="favFunction(this)" class="fa-solid
-                            fa-heart"></i>
+            <div class="compare-wrapper">
+              <div id="container" class="compare-scroller">
+                <table class="table compare-table table-striped align-middle">
+                  <thead>
+                    <tr>
+                      <th>صورة العقار</th>
+                      <th>سعر العقار</th>
+                      <th>عدد الغرف</th>
+                      <th>مساحة العقار</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
                         </button>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <p class="secondry-color">$505,00</p>
-                      <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-                      <p class="card-text">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>موقع المنزل يكتب هنا</span>
-                      </p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-bed"></i>
-                            <span>2 غرفة نوم</span>
-                          </small>
-                        </div>
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-bath"></i>
-                            <span>2 حمام</span>
-                          </small>
-                        </div>
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-ruler-combined"></i>
-                            <span>3000</span>
-                          </small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-6 col-12">
-                  <div class="card">
-                    <div class="card-img ">
-                      <img src="images/build.png" class="card-img-top"
-                        alt="...">
-                      <div class="card-hover">
-                        <div class="icons">
-                          <i class="fa-solid fa-arrow-up-from-bracket"></i>
-                        </div>
-                        <div class="icons">
-                          <a class="link" href="estate-details.html"></a>
-                          <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                        </div>
-                        <button class="fav icons">
-                          <i onclick="favFunction(this)" class="fa-solid
-                            fa-heart"></i>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
                         </button>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <p class="secondry-color">$505,00</p>
-                      <h5 class="card-title">شقه مطله علي البحر بحديقه</h5>
-                      <p class="card-text">
-                        <i class="bi bi-geo-alt"></i>
-                        <span>موقع المنزل يكتب هنا</span>
-                      </p>
-                    </div>
-                    <div class="card-footer">
-                      <div class="row">
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-bed"></i>
-                            <span>2 غرفة نوم</span>
-                          </small>
-                        </div>
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-bath"></i>
-                            <span>2 حمام</span>
-                          </small>
-                        </div>
-                        <div class="col-4">
-                          <small class="text-muted">
-                            <i class="fa-solid fa-ruler-combined"></i>
-                            <span>3000</span>
-                          </small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <img src="images/build.png" alt="">
+                        <button class="del-item" data-id="78">
+                          <i class="fa-regular fa-circle-xmark"></i>
+                          ازاله من المقارنة
+                        </button>
+                      </td>
+                      <td class="e_price">$505,00</td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-bed"></i>
+                          <span>2 غرفة نوم</span>
+                        </small>
+                      </td>
+                      <td>
+                        <small class="text-muted">
+                          <i class="fa-solid fa-ruler-combined"></i>
+                          <span>3000</span>
+                        </small>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            </section>
+            </div>
           </div>
         </div>
       </div>

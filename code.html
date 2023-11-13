@@ -143,80 +143,30 @@
         <div class="d-flex pt-4 justify-content-center breadcrumb">
           <a href="index.html" class="text-muted"> الرئيسية</a>
           <span class="mx-2">/</span>
-          <h6 class="secondry-color">انشاء حساب</h6>
+          <h6 class="secondry-color">تسجيل الدخول</h6>
         </div>
       </div>
     </section>
 
 
-    <!------------- signForm -> register -------------->
+    <!------------- signForm -> login -------------->
     <section class="signForm mb-5" style="background-image:
       url(images/bg-sign.png);">
       <div class="container">
-        <h5 class="my-5 fw-bold main-color">انشاء حساب مستخدم جديد -</h5>
+        <h5 class="my-5 fw-bold main-color"> ادخل الرمز التأكيدي -</h5>
         <form action="">
-          <div class="row gy-4 mb-5">
-            <div class="col-12 col-sm-6">
-              <label> دخول كـ*</label>
-              <div class="position-relative">
-                <select name="" class="form-control mt-2" required>
-                  <option selected="">مستخدم</option>
-                  <option value="1">شركة</option>
-                  <option value="2">وكيل</option>
-                </select>
-                <i class="bi bi-person-lines-fill"></i>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <label>الاسم *</label>
-              <div class="position-relative">
-                <input type="text" class="form-control" required>
-                <i class="bi bi-person"></i>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <label>البريد الاكتروني *</label>
-              <div class="position-relative">
-                <input type="email" class="form-control" required>
-                <i class="bi bi-envelope"></i>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <label>رقم الجوال *</label>
-              <div class="position-relative">
-                <input type="text" class="form-control" required>
-                <i class="bi bi-telephone"></i>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <label>الرقم السري *</label>
-              <div class="position-relative">
-                <i class="pass bi bi-lock"></i>
-                <input id="user-pass" type="password" class="form-control"
-                  required>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <label>البلد *</label>
-              <div class="position-relative">
-                <select name="" class="form-control mt-2" required>
-                  <option selected="" disabled="">اختر البلد</option>
-                  <option value="1">مصر</option>
-                  <option value="2">الامارات</option>
-                  <option value="3">الاردن</option>
-                  <option value="4">السعودية</option>
-                </select>
-                <i class="bi bi-flag"></i>
-              </div>
-            </div>
+          <div class="verify">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
+            <input class="code" type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{1}">
           </div>
-          <button type="submit" class="button aqar-button mt-3 m-auto px-5 py-2">
-            <div class="text">انشاء حساب</div>
-          </button>
+          <a href="newPass.html" class="button aqar-button mt-3 m-auto px-5 py-2">
+            <div class="text">تأكيد</div>
+          </a>
         </form>
       </div>
     </section>
-
 
     <!------------- footer section -------------->
     <footer>
@@ -262,7 +212,7 @@
 
           <!-- المساعدة -->
           <div class="col-12 col-sm-4 col-sm-4 col-md-4 col-lg-auto mt-3">
-            <h4>المساعدة</h4>
+            <h4 >المساعدة</h4>
             <div class="ln"></div>
             <ul>
               <li><a href="contact.html">تواصل معنا</a></li>

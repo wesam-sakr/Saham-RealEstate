@@ -148,68 +148,70 @@
             <small>عند موافقه العميل المبدئيه على التصميم يتم ازالة هذا النص من التصميم ويتم وضع النصوص النهائية
               المطلوبة للتصميم</small>
           </div>
-          <div class="build-options">
-            <div class="form-group">
-              <input type="radio" class="d-none" name="purpose" id="buy">
-              <label for="buy" class="place">
-                <div class="icon">
-                  <i class="fa-solid fa-landmark-flag"></i>
-                </div>
-                <span>شراء</span>
-              </label>
+          <form action="">
+            <div class="build-options">
+              <div class="form-group">
+                <input type="radio" class="d-none" name="purpose" id="buy">
+                <label for="buy" class="place">
+                  <div class="icon">
+                    <i class="fa-solid fa-landmark-flag"></i>
+                  </div>
+                  <span>شراء</span>
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="radio" class="d-none" name="purpose" id="rent">
+                <label class="place" for="rent">
+                  <div class="icon">
+                    <i class="fa-solid fa-house"></i>
+                  </div>
+                  <span>ايجار</span>
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="radio" class="d-none" name="purpose" id="land">
+                <label class="place" for="land">
+                  <div class="icon">
+                    <i class="fa-solid fa-campground"></i>
+                  </div>
+                  <span>قطعة أرض</span>
+                  </la>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="radio" class="d-none" name="purpose" id="rent">
-              <label class="place" for="rent">
-                <div class="icon">
-                  <i class="fa-solid fa-house"></i>
+            <div class="classification">
+              <div class="classification-content" action="" method="#" enctype="multipart">
+                <div class="col px-1">
+                  <input class="form-control w-100" type="search" placeholder="... ادخل الكلمات">
+  
                 </div>
-                <span>ايجار</span>
-              </label>
-            </div>
-            <div class="form-group">
-              <input type="radio" class="d-none" name="purpose" id="land">
-              <label class="place" for="land">
-                <div class="icon">
-                  <i class="fa-solid fa-campground"></i>
+                <div class="col px-1">
+                  <select>
+                    <option selected disabled>اختر النوع</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
                 </div>
-                <span>قطعة أرض</span>
-                </la>
+  
+                <div class="col px-1">
+                  <input class="form-control w-100" type="search" placeholder="الموقع">
+                </div>
+  
+                <div class="col px-1 room">
+                  <select>
+                    <option selected disabled>الغرف</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+  
+                <div class="col px-1">
+                  <button type="button" class="btn bg-main-color w-100">ابحث</button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="classification">
-            <form class="classification-content" action="" method="#" enctype="multipart">
-              <div class="col px-1">
-                <input class="form-control w-100" type="search" placeholder="... ادخل الكلمات">
-
-              </div>
-              <div class="col px-1">
-                <select>
-                  <option selected disabled>اختر النوع</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <div class="col px-1">
-                <input class="form-control w-100" type="search" placeholder="الموقع">
-              </div>
-
-              <div class="col px-1 room">
-                <select>
-                  <option selected disabled>الغرف</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
-
-              <div class="col px-1">
-                <button type="button" class="btn bg-main-color w-100">ابحث</button>
-              </div>
-            </form>
-          </div>
+          </form>
         </div>
       </div>
     </main>

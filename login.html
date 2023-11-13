@@ -156,21 +156,30 @@
         <h5 class="my-5 fw-bold main-color">تسجيل دخول -</h5>
         <form action="">
           <div class="row gy-4 mb-5">
-            <div class="col-12 col-sm-6 position-relative">
-              <p>البريد الاكتروني *</p>
-              <input type="email" class="form-control" required>
-              <i class="bi bi-envelope"></i>
+            <div class="col-12 col-sm-6">
+              <label>البريد الاكتروني *</label>
+              <div class="position-relative">
+                <i class="bi bi-envelope"></i>
+                <input type="email" class="form-control" required>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 position-relative">
-              <p>الرقم السري *</p>
-              <input id="user-pass" type="password" class="form-control"
-                required>
-              <i onclick="passFunction(this)" class="bi bi-lock"></i>
+            <div class="col-12 col-sm-6">
+              <label>الرقم السري *</label>
+              <div class="position-relative">
+                <i class="pass bi bi-lock"></i>
+                <input id="user-pass" type="password" class="form-control"
+                  required>
+              </div>
+              <a href="email.html">هل نسيت كلمة المرور ؟</a>
             </div>
           </div>
           <button type="submit" class="button aqar-button mt-3 m-auto px-5 py-2">
             <div class="text">تسجيل الدخول</div>
           </button>
+          <p class="text-center mt-2">
+            <span>ليس لديك حساب ؟</span>
+            <a href="register.html">انشاء حساب</a>
+          </p>
         </form>
       </div>
     </section>

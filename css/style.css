@@ -324,7 +324,7 @@ h5 + p {
 .navbar .quantity-num {
   position: absolute;
   top: 5px;
-  left: 5px;
+  inset-inline-end: 5px;
   background-color: var(--main-color);
   width: 15px;
   height: 15px;
@@ -468,7 +468,7 @@ header main {
 }
 
 .classification-content .form-control {
-  margin-left: 6px;
+  margin-inline-end: 6px;
   padding: 10px;
 }
 
@@ -489,7 +489,7 @@ header main {
 .side-menu-classification {
   position: fixed;
   top: 0;
-  right: -250px;
+  inset-inline-start: -250px;
   width: 250px;
   height: 100vh;
   background: #fff;
@@ -499,13 +499,13 @@ header main {
 }
 
 .side-menu-classification.show {
-  right: 0;
+  inset-inline-start: 0;
 }
 
 .toggle-side-menu-classification {
   position: absolute;
   top: 250px;
-  right: 100%;
+  inset-inline-start: 100%;
   color: #fff;
   padding: 9px;
   background-color: var(--secondry-color);
@@ -515,7 +515,9 @@ header main {
   line-height: 6px;
   z-index: 100;
 }
-
+html[lang='en'] .toggle-side-menu-classification{
+    border-radius: 0 5px 5px 0;
+}
 .toggle-side-menu-classification:hover {
   color: #fff;
 }
@@ -524,7 +526,7 @@ header main {
 .close-side-menu-classification:hover {
   position: absolute;
   top: 15px;
-  left: 20px;
+  inset-inline-end: 20px;
   cursor: pointer;
   /* color: var(--dark); */
   transition: all 0.5s;
@@ -664,7 +666,7 @@ header main {
   height: 2.2em;
   line-height: 2.3em;
   display: inline-block;
-  margin-left: 1em;
+  margin-inline-end: 1em;
   background: #fcfcfc;
 }
 
@@ -679,8 +681,8 @@ header main {
   content: "";
   position: absolute;
   top: 2.2rem;
-  right: 27px;
-  border-left: 0.5px dotted #53bf89;
+  inset-inline-start: 27px;
+  border-inline-end: 0.5px dotted #53bf89;
   height: 100%;
   margin: 2px 0px;
   z-index: -1;
@@ -834,12 +836,15 @@ header main {
 .our-estates .badge {
   position: absolute;
   top: 0;
-  left: -50%;
+  inset-inline-end: -50%;
   padding: 15px 80px;
   text-align: center;
   background: var(--secondry-color);
   transform: translate(50%, 50%) rotateZ(314deg);
   font-size: 16px;
+}
+html[lang='en'] .our-estates .badge {
+    transform: translate(-50%, 50%) rotateZ(-314deg);
 }
 
 /* ------ our-country section ------ */
@@ -962,9 +967,11 @@ header main {
   border-bottom: 0.5px solid #acacac57;
   border-radius: 10px;
 }
-
+.user-comment h5{
+    margin-bottom : 0 !important;
+}
 .product-heading {
-  padding-right: 1rem;
+  padding-inline-start: 1rem;
   margin: 0;
   position: relative;
   line-height: 2.2;
@@ -973,7 +980,7 @@ header main {
 .product-heading::before {
   content: "";
   position: absolute;
-  right: 0%;
+  inset-inline-start: 0%;
   top: 0;
   width: 3px;
   height: 100%;
@@ -1090,7 +1097,7 @@ footer .sub-footer img {
 }
 
 .contactUs .contact-data .contact-info ul li i {
-  margin-left: 14px;
+  margin-inline-end: 14px;
   margin-top: 5px;
   font-size: large;
 }
@@ -1205,7 +1212,7 @@ footer .sub-footer img {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  inset-inline-start: 0;
   width: 4px;
   height: 100%;
   background-color: var(--secondry-color);
@@ -1342,9 +1349,19 @@ footer .sub-footer img {
   border-radius: 0 20px 20px 0;
 }
 
+html[lang="en"] .compare-wrapper .compare-table tr th:first-child,
+html[lang="en"] .compare-wrapper .compare-table tr td:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
 .compare-wrapper .compare-table tr th:last-child,
 .compare-wrapper .compare-table tr td:last-child {
   border-radius: 20px 0 0 20px;
+}
+
+html[lang="en"] .compare-wrapper .compare-table tr th:last-child,
+html[lang="en"] .compare-wrapper .compare-table tr td:last-child {
+  border-radius: 0 20px 20px 0;
 }
 
 /* Phone */
@@ -1492,7 +1509,7 @@ footer .sub-footer img {
   content: "";
   width: 20px;
   height: 20px;
-  left: -4%;
+  inset-inline-end: -4%;
   background: #fff;
   transform: rotate(312deg);
   box-shadow: -5px -4px 5px #aaaaaa29;
@@ -1500,6 +1517,10 @@ footer .sub-footer img {
   z-index: -1;
 }
 
+html[lang='en'] .form-addbuilder .title-input::before{
+    transform: rotate(-312deg);
+    box-shadow: 5px -4px 5px #aaaaaa29;
+}
 .form-addbuilder .data-input {
   width: calc(100% - 300px);
   display: flex;
@@ -1513,7 +1534,7 @@ footer .sub-footer img {
   align-items: center;
   gap: 8px;
   border-radius: 9px;
-  margin-left: 20px;
+  margin-inline-end: 20px;
   text-align: center;
 }
 
@@ -1549,7 +1570,7 @@ footer .sub-footer img {
   border: 1px solid #919191;
   background-color: #919191;
   border-radius: 50%;
-  margin-right: 0;
+  margin-inline-start: 0;
 }
 
 .form-addbuilder input[type="radio"]:checked {
@@ -1576,7 +1597,7 @@ footer .sub-footer img {
   position: absolute;
   top: 0%;
   bottom: 0%;
-  right: 0%;
+  inset-inline-start: 0%;
   width: 100%;
   z-index: 9;
   opacity: 0;
@@ -1804,7 +1825,7 @@ footer .sub-footer img {
   transform: rotateY(180deg);
   position: absolute;
   top: 6px;
-  left: 0.3rem;
+  inset-inline-end: 0.3rem;
   color: #575757 !important;
   z-index: 4;
   box-shadow: none !important;
@@ -1852,7 +1873,7 @@ footer .sub-footer img {
   border-radius: 100%;
   min-width: 50px;
   overflow: hidden;
-  margin-left: 15px;
+  margin-inline-end: 15px;
 }
 
 .msg-data {
@@ -1872,14 +1893,14 @@ footer .sub-footer img {
 .msg-data span {
   position: absolute;
   top: calc(100% + 0.3rem);
-  left: 0.5rem;
+  inset-inline-end: 0.5rem;
   font-size: 13px;
   color: #404040;
 }
 
 .msg-item.outer {
   flex-direction: row-reverse;
-  margin-right: 25%;
+  margin-inline-start: 25%;
 }
 
 .msg-item.outer .msg-data {
@@ -1888,7 +1909,8 @@ footer .sub-footer img {
 }
 
 .msg-item.outer .msg-img {
-  margin: 0 15px 0 0;
+    margin-inline-end: 0px;
+    margin-inline-start: 15px;
 }
 
 .send-msg {
@@ -1906,7 +1928,7 @@ footer .sub-footer img {
   color: #fff;
   width: 50px;
   height: 100%;
-  margin-right: 10px;
+  margin-inline-start: 10px;
   font-size: large;
 }
 
@@ -2183,7 +2205,7 @@ footer .sub-footer img {
 
 .purpose {
   padding: 10px 20px;
-  margin-right: 15px;
+  margin-inline-start: 15px;
   color: var(--secondry-color);
   background-color: #2160b220;
   border-radius: 5px;
@@ -2275,7 +2297,7 @@ footer .sub-footer img {
   align-items: center;
   justify-content: center;
   width: 50px;
-  margin-left: 15px;
+  margin-inline-end: 15px;
   color: var(--main-color);
   background-color: rgba(1, 149, 114, 0.1);
   border-radius: 5px;
@@ -2341,7 +2363,7 @@ footer .sub-footer img {
   background-image: none !important;
   content: "+";
   position: absolute;
-  left: 1rem;
+  inset-inline-end: 1rem;
   font-size: 25px;
   width: 30px;
   height: 30px;
@@ -2847,13 +2869,13 @@ footer .sub-footer img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 10px;
+  margin-inline-end: 10px;
   font-size: 22px;
   line-height: 0;
 }
 
 .condition li {
-  padding-right: 30px;
+  padding-inline-start: 30px;
   position: relative;
   margin: 1rem 0;
   line-height: 1.9;
@@ -2866,7 +2888,7 @@ footer .sub-footer img {
   height: 15px;
   background: var(--main-color);
   border-radius: 4px;
-  right: 0;
+  inset-inline-start: 0;
   top: 0%;
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
@@ -3231,7 +3253,7 @@ footer .sub-footer img {
 
   .navbar .quantity-num {
     top: 3px;
-    left: 3px;
+    inset-inline-end: 3px;
   }
   .company-data .company-img {
     border-radius: 50%;
@@ -3279,4 +3301,46 @@ footer .sub-footer img {
 
 .side-menu-classification .build-options input:checked + .place .icon {
   background: var(--main-color) !important;
+}
+
+
+
+
+html[lang="en"] body{
+    direction: ltr;
+}
+html[lang="en"] .nice-select, html[lang="en"] .nice-select .list li {
+    text-align: left !important;
+    padding-left: 18px;
+    padding-right: 30px;
+}
+html[lang="en"] .nice-select:after {
+    left: unset;
+    right: 12px;
+}
+html[lang="en"] .nav-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    float: left;
+}
+html[lang="en"] .header-wrapper .header-video img.header-shape {
+    left: -2px;
+    transform: rotate(180deg);
+}
+html[lang="en"] .header-wrapper .header-video .play-icon, html[lang="en"] .header-wrapper .header-video .pause-icon {
+    left: 10px;
+    transform: translate(-50%, -50%); 
+}
+html[lang="en"] .header-wrapper .header-video .play-icon i, html[lang="en"] .header-wrapper .header-video .pause-icon i {
+    transform: unset;
+}
+html[lang="en"] .header-wrapper .header-contant .search .search-wrapper .form-control {
+    border-right: unset !important;
+    border-left: 1px solid #D0735E !important;
+    border-radius: 0 !important;
+}
+html[lang="en"] .Stars{
+    transform: rotateY(180deg);
+    direction: rtl;
+}
+html[lang="en"] .bi-arrow-left::before{
+    transform: rotateY(180deg);
 }

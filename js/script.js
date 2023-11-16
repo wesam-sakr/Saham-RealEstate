@@ -6,7 +6,27 @@ if (bodyDir == "rtl") {
 } else {
   dirAr = false;
 }
+
+
+
 $(document).ready(function () {
+
+  // var htmlLang = $("html").attr("lang");
+  // localStorage.setItem("lang", htmlLang);
+  // var newLang = localStorage.getItem('lang')
+  // $("html").attr("lang" , newLang);
+  // $('#lang').click(function(){
+  //   if (htmlLang == "ar") {
+  //     htmlLang = "en"
+      
+  //   } else {
+  //     htmlLang = "ar"
+  //   }
+  //   localStorage.setItem("lang", htmlLang);
+  //   newLang = localStorage.getItem('lang')
+  //   $("html").attr("lang" , newLang);
+  // })
+  
   $("#filter").click(function () {
     $(".filter").toggleClass("filter-toggle");
   });
